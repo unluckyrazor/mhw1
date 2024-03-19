@@ -1,8 +1,8 @@
 body {
     font-family: 'Rubik', Courier, monospace;
     background-color: ivory;
-    margin: 3% 5%;
-
+    margin: 3vh 5vw;
+    line-height: normal;
 }
 
 a:link {
@@ -10,12 +10,20 @@ a:link {
     text-decoration: none;
 }
 
-#im_header {
-    width: 300px;
-    display: block;
-    margin: auto;
+a:hover{
+    color: gray;
 }
 
+
+#im_header {
+    width: 22vw;
+    display: block;
+    margin: auto
+}
+
+#menu_button{
+    display: none;
+}
 
 #flexcontainer1nav {
     display: flex;
@@ -23,39 +31,46 @@ a:link {
     margin-top: 3%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 15px;
+    padding: 1%;
     padding-left: 20%;
     padding-right: 20%;
-    margin-bottom: 10px;
-    position: static;
+    margin-bottom: 1%;
+    
 
 }
 
 #flexcontainer2nav {
     display: flex;
     justify-content: space-around;
-
+    
+    
 }
 
 .flexitemnav1 {
     border-right: 1px solid black;
-    padding-left: 3%;
-    padding-right: 4.5%;
-
+    padding: 0% 3.5%;
     font-weight: bold;
+    
+    
 }
+
 
 .flexitemnav2 {
     border-right: 1px solid black;
-    padding-right: 100px;
+    padding:0% 7.5%;
 }
+
+
+
 
 h1 {
     margin: 1%;
+    
 }
 
 p {
     margin: 1%;
+    
 }
 
 
@@ -69,7 +84,7 @@ p {
     position: absolute;
     color: white;
     border: 2px solid white;
-    border-radius: 20%;
+    border-radius: 10px;
     padding: 3px;
     bottom: 25px;
     right: 5px;
@@ -84,6 +99,7 @@ p {
     color: black;
     font-weight: bold;
     font-style: italic;
+    text-align: right;
 }
 
 #flex_container_section {
@@ -111,20 +127,22 @@ p {
 .flex_item_article_left {
     border-bottom: 1px solid black;
     color: brown;
-    font-size: large;
+    font-size: 1rem;
     font-style: italic;
-    margin-top: 3%;
+    margin-top: 0%;
     width: 20vw;
     height: 42vh;
+    margin-bottom: 7%;
+    
 }
 
 
 
 .article_image_left {
-    height: 25vh;
-    width: 20vw;
+    height: 60%;
+    width: 100%;
     border-radius: 5%;
-    border: 2px solid black;
+    
 }
 
 
@@ -137,8 +155,8 @@ p {
     font-size: larger;
     margin-right: 3%;
     margin-left: 3%;
-    height: 75vh;
-    width: 50vw;
+    height: 100%;
+    
 }
 
 
@@ -150,18 +168,21 @@ p {
 .article_image_middle {
 
     width: 100%;
-    height: 40vh;
+    height: 40%;
     border-radius: 5%;
-    border: 2px solid black;
+    
 
 }
 
 
-#middle_article {
+#middle_article_header {
     font-size: larger;
     color: brown;
 }
 
+#side_header{
+    font-size: 1rem;
+}
 
 
 
@@ -170,25 +191,29 @@ p {
 #right_flex_cont {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    height: 100%;
+    
+    
 }
 
 .flex_item_article_right {
     border-bottom: 1px solid black;
     color: brown;
-    font-size: large;
+    font-size: 100%;
     font-style: italic;
-    flex-basis: 80%;
-
+    height: 75vh;
+    
 
 }
 
 .article_image_right {
-    width: 20vw;
-    height: 80%;
+    width: 100%;
+    height: 70%;
     border-radius: 5%;
-    border: 2px solid black;
+    
 }
+
+
 
 
 
@@ -210,15 +235,15 @@ p {
     top: 3%;
     border-top: 2px solid black;
     padding: 5px;
-    margin-top: 10vh;
+    margin-top: 5%;
 }
 
 
 .flex_item_footer {
 
     border-right: 1px solid black;
-    padding: 5px;
-
+    padding-right: 1.5%;
+    padding-left: 1%;
     font-style: italic;
 }
 
@@ -233,7 +258,7 @@ p {
 
 #footer_final {
     text-align: center;
-    line-height: 50%;
+    
 }
 
 
@@ -245,10 +270,123 @@ p {
 
 @media (max-width: 500px) {
     article {
-        margin: 0 5px;
+        margin: 0 0px;
     }
 
-    #flex_container_section1 {
+    #flex_container_section{
         flex-direction: column;
     }
+    
+
+#flexcontainer1nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1.2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+#im_header {
+    width: 45vw;
+    
+}
+
+body {
+    
+    margin: 2vh 0vw;
+    
+}
+
+
+#flex_container_section {
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
+    
+
+}
+
+
+.flex_item_article_left {
+    
+    width: 100%;
+    height: 70%;
+    
+}
+
+
+#flexcontainer1nav {
+    display: none;
+   
+}
+
+
+#flexcontainer2nav {
+    display: none;
+    
+}
+
+#menu_button{
+    display: inline;
+    height: 5vh;
+    margin-left: 5%;
+    position: relative;
+    top: -8vh;
+    
+    
+    
+}
+
+#flex_item_article_middle {
+    
+    margin-right: 0%;
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+}   
+
+#right_flex_cont{
+
+    width: 100%;
+    
+}
+
+.flex_item_article_right {
+    margin-top: 3%;
+    height: 40%;
+}
+
+.article_image_right {
+    
+    width: 100%;
+    height: 27vh;
+    
+}
+
+
+h1 {
+    margin: 0.3%;
+    
+}
+
+p {
+    margin: 0.3%;
+    
+}
+
+
+#flex_item_article_middle {
+    
+    font-size: 1rem;
+    
+    
+}
+
+
 }
